@@ -8,11 +8,11 @@ spec:
   containers:
     - name: hello
       image: registry.access.redhat.com/ubi9/ubi
-      command: ["sleep", "3600"]
+      command: ["sleep", "4000"]
       volumeMounts:
         - name: data
           mountPath: /mnt
   volumes:
     - name: data
       persistentVolumeClaim:
-        claimName: grafana-prd-pvc
+        claimName: data-pvc
