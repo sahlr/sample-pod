@@ -1,1 +1,1 @@
-sample pod to list folder on existing pvc
+sample pod to display the contents of an existing PVC directory
